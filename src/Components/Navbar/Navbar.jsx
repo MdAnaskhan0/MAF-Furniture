@@ -112,7 +112,7 @@ const Navbar = () => {
             </ul>
 
             {/* Icons */}
-            <div className="flex pb-4 justify-center md:justify-start md:mt-0 md:ml-6 space-x-4">
+            <div className="flex pb-4 border-b-2 border-green-500 sm:border-b-0 sm:pb-0 justify-center md:justify-start md:mt-0 md:ml-6 space-x-4">
               <NavLink
                 to="/user"
                 className={({ isActive }) =>

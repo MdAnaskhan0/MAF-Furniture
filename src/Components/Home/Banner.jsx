@@ -8,11 +8,11 @@ const Banner = () => {
       <div className="bg-[#3B5D50] min-h-[100vh] py-16 flex items-center justify-center">
         <div className="container mx-auto px-4 flex flex-col md:flex-row items-center space-y-8 md:space-y-0 md:space-x-8">
           {/* Banner Text */}
-          <div className="flex flex-col sm:gap-8 text-center md:text-left md:w-1/2 mb-8 md:mb-0">
+          <div className="flex flex-col gap-4 sm:gap-8 text-center md:text-left md:w-1/2 mb-8 md:mb-0">
             <h1 className="text-5xl md:text-7xl font-bold text-white">
               Welcome to <span className="text-green-600">MAF Furniture</span>
             </h1>
-            <p className="text-gray-200 text-lg">
+            <p className="text-gray-200 text-sm sm:text-lg">
               Modern Interior Design Studio
             </p>
             <div className='flex justify-center md:justify-start gap-5 font-normal'>
