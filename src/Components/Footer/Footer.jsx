@@ -46,7 +46,7 @@ const Footer = () => {
                   placeholder="Enter your email"
                 />
                 <button className="bg-[#3B5D50] py-2 px-7 rounded-md">
-                  <FaTelegramPlane className="text-2xl text-white" />
+                  <FaTelegramPlane className="text-2xl text-white mx-auto sm:mx-0"/>
                 </button>
               </form>
             </div>
