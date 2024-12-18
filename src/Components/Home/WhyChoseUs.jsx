@@ -7,7 +7,7 @@ import WhyChoseImage from '../../assets/images/why-choose-us-img.jpg';
 
 const WhyChoseUs = () => {
   return (
-    <div className="bg-gray-100 min-h-[100vh] flex items-center justify-center py-16">
+    <div className="bg-[#EFF2F1] min-h-[100vh] flex items-center justify-center py-16">
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row items-center space-y-8 md:space-y-0 md:space-x-12">
           {/* Why Chose Us */}

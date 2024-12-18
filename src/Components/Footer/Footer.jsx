@@ -105,7 +105,7 @@ const Footer = () => {
           {/* Footer Links */}
           <div>
             <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
-            <ul className="space-y-2 text-gray-600">
+            <ul className="space-y-2 text-gray-600 text-sm sm:text-base">
               <li>
                 <Link to="/about" className="hover:text-[#3B5D50] transition">
                   About Us
@@ -131,7 +131,7 @@ const Footer = () => {
 
           <div>
             <h4 className="text-lg font-semibold mb-4">Support</h4>
-            <ul className="space-y-2 text-gray-600">
+            <ul className="space-y-2 text-gray-600 text-sm sm:text-base">
               <li>
                 <Link to="/support" className="hover:text-[#3B5D50] transition">
                   Support
@@ -158,7 +158,7 @@ const Footer = () => {
 
           <div>
             <h4 className="text-lg font-semibold mb-4">Company</h4>
-            <ul className="space-y-2 text-gray-600">
+            <ul className="space-y-2 text-gray-600 text-sm sm:text-base">
               <li>
                 <Link to="/jobs" className="hover:text-[#3B5D50] transition">
                   Jobs
@@ -190,7 +190,7 @@ const Footer = () => {
 
           <div>
             <h4 className="text-lg font-semibold mb-4">Products</h4>
-            <ul className="space-y-2 text-gray-600">
+            <ul className="space-y-2 text-gray-600 text-sm sm:text-base">
               <li>
                 <Link
                   to="/nordic-chair"

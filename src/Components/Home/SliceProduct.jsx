@@ -9,7 +9,7 @@ const SliceProduct = () => {
 
   return (
     <>
-      <div className="bg-gray-100 min-h-[100vh] flex items-center justify-center">
+      <div className="bg-[#EFF2F1] min-h-[100vh] flex items-center justify-center">
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row items-center">
             {/* Left side information */}
