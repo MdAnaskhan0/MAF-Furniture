@@ -45,6 +45,7 @@ const Navbar = () => {
                       ? "block py-1  text-green-600 px-4 sm:px-0 sm:border-b-4 border-green-600 transition ease-in-out duration-300"
                       : "block py-2 px-4 hover:text-green-600 transition"
                   }
+                  onClick={toggleMenu}
                 >
                   Home
                 </NavLink>
@@ -57,6 +58,7 @@ const Navbar = () => {
                       ? "block py-1  text-green-600 px-4 sm:px-0 sm:border-b-4 border-green-600 transition ease-in-out duration-300"
                       : "block py-2 px-4 hover:text-green-600 transition"
                   }
+                  onClick={toggleMenu}
                 >
                   Shop
                 </NavLink>
@@ -69,6 +71,7 @@ const Navbar = () => {
                       ? "block py-1  text-green-600 px-4 sm:px-0 sm:border-b-4 border-green-600 transition ease-in-out duration-300"
                       : "block py-2 px-4 hover:text-green-600 transition"
                   }
+                  onClick={toggleMenu}
                 >
                   About Us
                 </NavLink>
@@ -81,6 +84,7 @@ const Navbar = () => {
                       ? "block py-1  text-green-600 px-4 sm:px-0 sm:border-b-4 border-green-600 transition ease-in-out duration-300"
                       : "block py-2 px-4 hover:text-green-600 transition"
                   }
+                  onClick={toggleMenu}
                 >
                   Services
                 </NavLink>
@@ -93,6 +97,7 @@ const Navbar = () => {
                       ? "block py-1  text-green-600 px-4 sm:px-0 sm:border-b-4 border-green-600 transition ease-in-out duration-300"
                       : "block py-2 px-4 hover:text-green-600 transition"
                   }
+                  onClick={toggleMenu}
                 >
                   Blog
                 </NavLink>
@@ -105,6 +110,7 @@ const Navbar = () => {
                       ? "block py-1  text-green-600 px-4 sm:px-0 sm:border-b-4 border-green-600 transition ease-in-out duration-300"
                       : "block py-2 px-4 hover:text-green-600 transition"
                   }
+                  onClick={toggleMenu}
                 >
                   Contact Us
                 </NavLink>
@@ -120,6 +126,7 @@ const Navbar = () => {
                     ? "block py-1  text-green-600 border-b-4 border-green-600 transition ease-in-out duration-300"
                     : "text-gray-800 hover:text-green-600 text-xl"
                 }
+                onClick={toggleMenu}
               >
                 <FaUser />
               </NavLink>
@@ -130,6 +137,7 @@ const Navbar = () => {
                     ? "block py-1  text-green-600 border-b-4 border-green-600 transition ease-in-out duration-300"
                     : "text-gray-800 hover:text-green-600 text-xl"
                 }
+                onClick={toggleMenu}
               >
                 <FaCartShopping />
               </NavLink>

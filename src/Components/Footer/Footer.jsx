@@ -46,7 +46,7 @@ const Footer = () => {
                   placeholder="Enter your email"
                 />
                 <button className="bg-[#3B5D50] py-2 px-7 rounded-md">
-                  <FaTelegramPlane className="text-2xl text-white mx-auto sm:mx-0"/>
+                  <FaTelegramPlane className="text-2xl text-white mx-auto sm:mx-0" />
                 </button>
               </form>
             </div>
@@ -60,13 +60,13 @@ const Footer = () => {
             <Link to="/" className="block mb-4">
               <Logo />
             </Link>
-            <p className="text-gray-600 mb-6 text-sm">
+            <p className="text-gray-600 mb-6 text-xs sm:text-sm">
               Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio
               quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam
               vulputate velit imperdiet dolor tempor tristique.
             </p>
             {/* Social Media Links */}
-            <ul className="flex gap-4">
+            <ul className="flex gap-4 justify-start items-center">
               <li>
                 <Link
                   to="https://www.facebook.com"
@@ -102,120 +102,122 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Footer Links */}
-          <div>
-            <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
-            <ul className="space-y-2 text-gray-600 text-sm sm:text-base">
-              <li>
-                <Link to="/about" className="hover:text-[#3B5D50] transition">
-                  About Us
-                </Link>
-              </li>
-              <li>
-                <Link to="/service" className="hover:text-[#3B5D50] transition">
-                  Services
-                </Link>
-              </li>
-              <li>
-                <Link to="/blog" className="hover:text-[#3B5D50] transition">
-                  Blog
-                </Link>
-              </li>
-              <li>
-                <Link to="/contact" className="hover:text-[#3B5D50] transition">
-                  Contact
-                </Link>
-              </li>
-            </ul>
-          </div>
+          <div className="lg:col-span-4 flex justify-between items-start sm:gap-10">
+            {/* Footer Links */}
+            <div>
+              <h4 className="text-sm sm:text-lg font-semibold mb-4">Quick Links</h4>
+              <ul className="space-y-2 text-gray-600 text-xs sm:text-base">
+                <li>
+                  <Link to="/about" className="hover:text-[#3B5D50] transition">
+                    About Us
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/service" className="hover:text-[#3B5D50] transition">
+                    Services
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/blog" className="hover:text-[#3B5D50] transition">
+                    Blog
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/contact" className="hover:text-[#3B5D50] transition">
+                    Contact
+                  </Link>
+                </li>
+              </ul>
+            </div>
 
-          <div>
-            <h4 className="text-lg font-semibold mb-4">Support</h4>
-            <ul className="space-y-2 text-gray-600 text-sm sm:text-base">
-              <li>
-                <Link to="/support" className="hover:text-[#3B5D50] transition">
-                  Support
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/knowledge"
-                  className="hover:text-[#3B5D50] transition"
-                >
-                  Knowledge Base
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/live-chat"
-                  className="hover:text-[#3B5D50] transition"
-                >
-                  Live Chat
-                </Link>
-              </li>
-            </ul>
-          </div>
+            <div>
+              <h4 className="text-sm sm:text-lg font-semibold mb-4">Support</h4>
+              <ul className="space-y-2 text-gray-600 text-xs sm:text-base">
+                <li>
+                  <Link to="/support" className="hover:text-[#3B5D50] transition">
+                    Support
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/knowledge"
+                    className="hover:text-[#3B5D50] transition"
+                  >
+                    Knowledge Base
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/live-chat"
+                    className="hover:text-[#3B5D50] transition"
+                  >
+                    Live Chat
+                  </Link>
+                </li>
+              </ul>
+            </div>
 
-          <div>
-            <h4 className="text-lg font-semibold mb-4">Company</h4>
-            <ul className="space-y-2 text-gray-600 text-sm sm:text-base">
-              <li>
-                <Link to="/jobs" className="hover:text-[#3B5D50] transition">
-                  Jobs
-                </Link>
-              </li>
-              <li>
-                <Link to="/team" className="hover:text-[#3B5D50] transition">
-                  Our Team
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/leadership"
-                  className="hover:text-[#3B5D50] transition"
-                >
-                  Leadership
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/privacy-policy"
-                  className="hover:text-[#3B5D50] transition"
-                >
-                  Privacy Policy
-                </Link>
-              </li>
-            </ul>
-          </div>
+            <div>
+              <h4 className="text-sm sm:text-lg font-semibold mb-4">Company</h4>
+              <ul className="space-y-2 text-gray-600 text-xs sm:text-base">
+                <li>
+                  <Link to="/jobs" className="hover:text-[#3B5D50] transition">
+                    Jobs
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/team" className="hover:text-[#3B5D50] transition">
+                    Our Team
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/leadership"
+                    className="hover:text-[#3B5D50] transition"
+                  >
+                    Leadership
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/privacy-policy"
+                    className="hover:text-[#3B5D50] transition"
+                  >
+                    Privacy Policy
+                  </Link>
+                </li>
+              </ul>
+            </div>
 
-          <div>
-            <h4 className="text-lg font-semibold mb-4">Products</h4>
-            <ul className="space-y-2 text-gray-600 text-sm sm:text-base">
-              <li>
-                <Link
-                  to="/nordic-chair"
-                  className="hover:text-[#3B5D50] transition"
-                >
-                  Nordic Chair
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/kruzo-aero"
-                  className="hover:text-[#3B5D50] transition"
-                >
-                  Kruzo Aero
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/ergonomic-chair"
-                  className="hover:text-[#3B5D50] transition"
-                >
-                  Ergonomic Chair
-                </Link>
-              </li>
-            </ul>
+            <div>
+              <h4 className="text-sm sm:text-lg font-semibold mb-4">Products</h4>
+              <ul className="space-y-2 text-gray-600 text-xs sm:text-base">
+                <li>
+                  <Link
+                    to="/nordic-chair"
+                    className="hover:text-[#3B5D50] transition"
+                  >
+                    Nordic Chair
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/kruzo-aero"
+                    className="hover:text-[#3B5D50] transition"
+                  >
+                    Kruzo Aero
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/ergonomic-chair"
+                    className="hover:text-[#3B5D50] transition"
+                  >
+                    Ergonomic Chair
+                  </Link>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
 

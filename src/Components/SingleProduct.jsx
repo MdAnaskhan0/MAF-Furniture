@@ -24,36 +24,36 @@ const SingleProduct = () => {
     <div className="bg-[#EFF2F1] min-h-screen py-10">
       <div className="container mx-auto px-6 lg:px-16">
         <div className="overflow-hidden grid grid-cols-1 lg:grid-cols-2 items-center gap-6">
-          <div className="p-8 flex items-center justify-center">
+          <div className="p-1 sm:p-8 flex items-center justify-center">
             <img
               src={product?.images[0]}
               alt={product?.title}
-              className="max-w-full h-auto object-contain"
+              className="max-w-xs sm:max-w-full h-auto sm:object-contain"
             />
           </div>
           <div className="p-8 lg:p-12">
-            <h1 className="text-4xl font-bold text-gray-800">
+            <h1 className="text-2xl sm:text-4xl font-bold text-gray-800">
               {product?.title}
             </h1>
             <p className="text-gray-800 sm:pr-12 mt-4 text-base">
               Product ID: {product?.sku}
             </p>
-            <p className="text-gray-500 sm:pr-12 mt-4 text-base">
+            <p className="text-gray-500 sm:pr-12 mt-4 text-sm sm:text-base">
               {product?.description}
             </p>
             <div className="mt-6 space-y-3">
-              <p className="text-xl font-bold bg-[#3B5D50] text-white px-4 py-2 rounded-md max-w-fit">
+              <p className="text-md sm:text-xl font-semibold bg-[#3B5D50] text-white px-4 py-2 rounded-md max-w-fit">
                 Price: <span>৳</span> {product.price?.toFixed(0)}
               </p>
 
-              <div className="text-yellow-500 mb-2 text-2xl">
+              <div className="text-yellow-500 mb-2 text-lg sm:text-2xl">
                 {Array.from({ length: product.rating }).map((_, index) => (
                   <span key={index}>&#9733;</span>
                 ))}{" "}
-                <span className="text-black text-lg">{product?.rating}</span>
+                <span className="text-black text-base sm:text-lg">{product?.rating}</span>
               </div>
-              <p className="text-md font-medium">Brand: {product?.brand}</p>
-              <p className="text-md font-medium">
+              <p className="text-sm sm:text-md font-medium">Brand: {product?.brand}</p>
+              <p className="text-sm sm:text-md font-medium">
                 Category: {product?.category}
               </p>
               <p className="text-md font-medium">
@@ -73,40 +73,42 @@ const SingleProduct = () => {
 
         {/* Product Details */}
         <div className="mt-12 bg-white shadow-lg rounded-lg p-8">
-          <h2 className="text-3xl font-bold text-gray-800 border-b pb-4 mb-6">
+          <h2 className="text-3xl font-semibold uppercase text-gray-800 border-b pb-4 mb-6">
             Product Details
           </h2>
           <div className="space-y-4 text-gray-700">
-            <p className="flex items-center">
+            <p className="flex items-start justify-start">
               <span className="font-medium text-gray-900">Dimensions:</span>
               &nbsp;
-              <span>
-                Depth:{" "}
+              <span className="text-sm flex flex-col">
+                
                 <span className="text-gray-800">
-                  {product?.dimensions?.depth} cm
+                Depth:{" "}{product?.dimensions?.depth} cm
                 </span>
-                , Height:{" "}
+                 
                 <span className="text-gray-800">
-                  {product?.dimensions?.height} cm
+                Height:{" "}{product?.dimensions?.height} cm
                 </span>
-                , Width:{" "}
+        
                 <span className="text-gray-800">
-                  {product?.dimensions?.width} cm
+                Width:{" "}{product?.dimensions?.width} cm
                 </span>
               </span>
             </p>
+            <hr className="border-gray-200"/>
             <p className="flex items-center">
               <span className="font-medium text-gray-900">
-                Shipping Information:
+                Shipping:
               </span>
               &nbsp;
               <span className="text-gray-800">
                 {product?.shippingInformation || "Not available"}
               </span>
             </p>
+            <hr className="border-gray-200"/>
             <p className="flex items-center">
               <span className="font-medium text-gray-900">
-                Warranty Information:
+                Warranty:
               </span>
               &nbsp;
               <span className="text-gray-800">
@@ -118,8 +120,8 @@ const SingleProduct = () => {
 
         {/* Product Reviews */}
         {product?.reviews?.length > 0 && (
-          <div className="mt-12">
-            <h2 className="text-3xl font-semibold text-gray-800 mb-6">
+          <div className="my-12">
+            <h2 className="text-3xl font-semibold uppercase text-gray-800 mb-6">
               Customer Reviews
             </h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -133,8 +135,10 @@ const SingleProduct = () => {
                     <p className="text-sm text-gray-500">
                       - {review.reviewerName}
                     </p>
-                    <p className="text-sm text-yellow-500">
-                      ⭐ {review.rating}
+                    <p className="text-md text-yellow-500">
+                      {Array.from({ length: review.rating }).map((_, index) => (
+                        <span key={index}>&#9733;</span>
+                      ))}
                     </p>
                   </div>
                 </div>
