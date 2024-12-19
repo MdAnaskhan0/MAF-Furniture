@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Person1 from '../assets/images/person_1.jpg';
-import Person2 from '../assets/images/person_2.jpg';
+import Person1 from '../assets/images/Kabir.jpg';
+import Person2 from '../assets/images/Anas.jpg';
 import Person3 from '../assets/images/person_3.jpg';
 import Person4 from '../assets/images/person_4.jpg';
 
@@ -46,7 +46,7 @@ const OurTeams = () => {
       <div className="container mx-auto px-6 lg:px-16">
         <div className="text-center mb-12">
           <h1 className="text-4xl font-bold text-gray-800 mb-4">Our Team</h1>
-          <p className="text-gray-600 text-lg">
+          <p className="text-gray-600 mb-8 px-4 text-sm sm:text-base sm:px-0">
             Meet the dedicated professionals who drive Maf Furniture's success.
           </p>
         </div>
@@ -60,14 +60,14 @@ const OurTeams = () => {
               <img
                 src={member.image}
                 alt={member.name}
-                className="w-full h-auto object-cover"
+                className="w-full h-72 object-cover"
               />
               <div className="p-6 text-center">
                 <h3 className="text-xl font-bold text-gray-800">{member.name}</h3>
                 <p className="text-sm text-gray-500 mb-4">{member.title}</p>
                 <p className="text-gray-600 text-sm mb-6">{member.description}</p>
                 <Link
-                  to=""
+                  to="/shop"
                   className="text-[#3B5D50] font-semibold hover:text-green-700"
                 >
                   View Details...
