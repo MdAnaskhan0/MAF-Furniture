@@ -8,6 +8,7 @@ import Service from "./Pages/Service";
 import Blog from "./Pages/Blog";
 import Contact from "./Pages/Contact";
 import ProductDetails from "./Pages/ProductDetails";
+import User from "./Pages/User";
 
 // Components
 import ProductsProvider from "./Context/ProductsContext";
@@ -27,6 +28,7 @@ const App = () => {
           <Route path="/service" element={<Service />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/user" element={<User />} />
         </Routes>
         <Footer />
       </ProductsProvider>

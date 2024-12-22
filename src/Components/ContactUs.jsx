@@ -32,32 +32,37 @@ const ContactUs = () => {
         </h2>
 
         {/* Contact Info */}
-        <div className="flex flex-col sm:flex-row justify-center items-start gap-8 mb-12 text-gray-700 text-center sm:text-left">
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <FaMapMarkerAlt className="text-3xl text-[#3B5D50]" />
-            <div>
-              <h4 className="text-lg font-bold">Our Location</h4>
-              <p className="text-sm">Uttor Badda, Dhaka-1212</p>
-            </div>
-          </div>
+<div className="flex flex-col sm:flex-row justify-center sm:justify-between items-center sm:items-start gap-8 sm:gap-12 mb-12 text-gray-700 text-center sm:text-left">
+  {/* Location */}
+  <div className="flex flex-col sm:flex-row items-center sm:items-start gap-4">
+    <FaMapMarkerAlt className="text-3xl sm:text-4xl text-[#3B5D50]" />
+    <div>
+      <h4 className="text-lg sm:text-xl font-bold">Our Location</h4>
+      <p className="text-sm sm:text-base">Uttor Badda, Dhaka-1212</p>
+    </div>
+  </div>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <FaEnvelope className="text-2xl text-[#3B5D50]" />
-            <div>
-              <h4 className="text-lg font-bold">Email Us</h4>
-              <p className="text-sm">maf.furniture@gmail.com</p>
-            </div>
-          </div>
+  {/* Email */}
+  <div className="flex flex-col sm:flex-row items-center sm:items-start gap-4">
+    <FaEnvelope className="text-2xl sm:text-3xl text-[#3B5D50]" />
+    <div>
+      <h4 className="text-lg sm:text-xl font-bold">Email Us</h4>
+      <p className="text-sm sm:text-base">maf.furniture@gmail.com</p>
+    </div>
+  </div>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <FaPhoneAlt className="text-2xl text-[#3B5D50]" />
-            <div>
-              <h4 className="text-lg font-bold">Phone</h4>
-              <p className="text-sm">+880 17905-39698</p>
-              <p className="text-sm">+880 16761-68037</p>
-            </div>
-          </div>
-        </div>
+  {/* Phone */}
+  <div className="flex flex-col sm:flex-row items-center sm:items-start gap-4">
+    <FaPhoneAlt className="text-2xl sm:text-3xl text-[#3B5D50]" />
+    <div>
+      <h4 className="text-lg sm:text-xl font-bold">Phone</h4>
+      <p className="text-sm sm:text-base">+880 17905-39698</p>
+      <p className="text-sm sm:text-base">+880 16761-68037</p>
+    </div>
+  </div>
+</div>
+
+
 
         {/* Contact Form */}
         <form
