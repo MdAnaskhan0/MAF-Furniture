@@ -28,39 +28,39 @@ const ContactUs = () => {
     <div className="bg-[#EFF2F1] py-16">
       <div className="container mx-auto px-4 lg:px-16">
         <h2 className="text-4xl font-bold text-center text-gray-800 mb-8">
-          Contact Us
+          Want to get in touch? We're here to help!
         </h2>
 
         {/* Contact Info */}
-<div className="flex flex-col sm:flex-row justify-center sm:justify-between items-center sm:items-start gap-8 sm:gap-12 mb-12 text-gray-700 text-center sm:text-left">
-  {/* Location */}
-  <div className="flex flex-col sm:flex-row items-center sm:items-start gap-4">
-    <FaMapMarkerAlt className="text-3xl sm:text-4xl text-[#3B5D50]" />
-    <div>
-      <h4 className="text-lg sm:text-xl font-bold">Our Location</h4>
-      <p className="text-sm sm:text-base">Uttor Badda, Dhaka-1212</p>
-    </div>
-  </div>
+        <div className="flex flex-col sm:flex-row justify-center sm:justify-between items-center sm:items-start gap-8 sm:gap-12 mb-12 text-gray-700 text-center sm:text-left">
+          {/* Location */}
+          {/* <div className="flex flex-col sm:flex-row items-center sm:items-start gap-4">
+            <FaMapMarkerAlt className="text-3xl sm:text-4xl text-[#3B5D50]" />
+            <div>
+              <h4 className="text-lg sm:text-xl font-bold">Our Location</h4>
+              <p className="text-sm sm:text-base">Uttor Badda, Dhaka-1212</p>
+            </div>
+          </div> */}
 
-  {/* Email */}
-  <div className="flex flex-col sm:flex-row items-center sm:items-start gap-4">
-    <FaEnvelope className="text-2xl sm:text-3xl text-[#3B5D50]" />
-    <div>
-      <h4 className="text-lg sm:text-xl font-bold">Email Us</h4>
-      <p className="text-sm sm:text-base">maf.furniture@gmail.com</p>
-    </div>
-  </div>
+          {/* Email */}
+          {/* <div className="flex flex-col sm:flex-row items-center sm:items-start gap-4">
+            <FaEnvelope className="text-2xl sm:text-3xl text-[#3B5D50]" />
+            <div>
+              <h4 className="text-lg sm:text-xl font-bold">Email Us</h4>
+              <p className="text-sm sm:text-base">maf.furniture@gmail.com</p>
+            </div>
+          </div> */}
 
-  {/* Phone */}
-  <div className="flex flex-col sm:flex-row items-center sm:items-start gap-4">
-    <FaPhoneAlt className="text-2xl sm:text-3xl text-[#3B5D50]" />
-    <div>
-      <h4 className="text-lg sm:text-xl font-bold">Phone</h4>
-      <p className="text-sm sm:text-base">+880 17905-39698</p>
-      <p className="text-sm sm:text-base">+880 16761-68037</p>
-    </div>
-  </div>
-</div>
+          {/* Phone */}
+          {/* <div className="flex flex-col sm:flex-row items-center sm:items-start gap-4">
+            <FaPhoneAlt className="text-2xl sm:text-3xl text-[#3B5D50]" />
+            <div>
+              <h4 className="text-lg sm:text-xl font-bold">Phone</h4>
+              <p className="text-sm sm:text-base">+880 17905-39698</p>
+              <p className="text-sm sm:text-base">+880 16761-68037</p>
+            </div>
+          </div> */}
+        </div>
 
 
 

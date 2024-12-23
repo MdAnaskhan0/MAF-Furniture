@@ -32,9 +32,8 @@ const Navbar = () => {
 
           {/* Navigation Links */}
           <div
-            className={`${
-              isOpen ? "block" : "hidden"
-            } md:flex md:items-center md:space-x-6 absolute md:static bg-white md:bg-transparent w-full left-0 top-16 md:top-auto z-50 md:w-auto md:translate-x-0`}
+            className={`${isOpen ? "block" : "hidden"
+              } md:flex md:items-center md:space-x-6 absolute md:static bg-white md:bg-transparent w-full left-0 top-16 md:top-auto z-50 md:w-auto md:translate-x-0`}
           >
             <ul className="flex flex-col md:flex-row md:space-x-6 md:items-center text-gray-700 font-semibold">
               <li>
@@ -118,13 +117,15 @@ const Navbar = () => {
             </ul>
 
             {/* Icons */}
+            {/* Icons */}
             <div className="flex pb-4 border-b-2 border-green-500 sm:border-b-0 sm:pb-0 justify-center md:justify-start md:mt-0 md:ml-6 space-x-4">
               <NavLink
                 to="/user"
                 className={({ isActive }) =>
-                  isActive
-                    ? "block py-1  text-green-600 border-b-4 border-green-600 transition ease-in-out duration-300"
+                  `block py-2 ${isActive
+                    ? "text-green-600 sm:border-b-4 border-green-600 transition ease-in-out duration-300 text-xl"
                     : "text-gray-800 hover:text-green-600 text-xl"
+                  }`
                 }
                 onClick={toggleMenu}
               >
@@ -133,9 +134,10 @@ const Navbar = () => {
               <NavLink
                 to="/cart"
                 className={({ isActive }) =>
-                  isActive
-                    ? "block py-1  text-green-600 border-b-4 border-green-600 transition ease-in-out duration-300"
+                  `block py-2 ${isActive
+                    ? "text-green-600 sm:border-b-4 border-green-600 transition ease-in-out duration-300 text-xl"
                     : "text-gray-800 hover:text-green-600 text-xl"
+                  }`
                 }
                 onClick={toggleMenu}
               >
